@@ -1,0 +1,5 @@
+<!-- <app-pie-charts *ngIf="widget.type === 'widgetA'" [resizeEvent]="resizeEvent" [widget]="widget"></app-pie-charts>
+<app-line [widget]="widget" [resizeEvent]="resizeEvent" *ngIf="widget.type === 'widgetB'"></app-line> -->
+<app-pie-charts *ngIf="widget.type === 'widgetA'"></app-pie-charts>
+<app-line *ngIf="widget.type === 'widgetB'"></app-line>
+<app-widget-c [widget]="widget" [resizeEvent]="resizeEvent" *ngIf="widget.type === 'widgetC'"></app-widget-c>
